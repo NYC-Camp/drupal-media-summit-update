@@ -1,0 +1,800 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Drupal 8 Media Status</title>
+    <meta name="description" content="An always-up-to-date presentation on the status of the Drupal 8 Media work">
+    <meta name="author" content="Drupal Media Team">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/night.css" id="theme">
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+<section class="cover">
+  <!--<img src="img/EVENT-LOGO.png" style="border: none; height: 300px" />--><img src="img/drupal-media.png" style="border: none; height: 300px" />
+  <h2>Drupal 8 Media Status</h2>
+  <!--<p>
+    <a href="https://www.drupal.org/u/YOUR-NAME">YOUR NAME</a> / <a href="http://twitter.com/YOUR_NAME">@YOUR_NAME</a>
+  </p>-->
+  <p>
+    <a href="http://drupal-media.github.io/d8-status-update">drupal-media.github.io/d8-status-update</a>
+  </p>
+</section>
+
+<!--
+<section>
+  About you
+</section>
+-->
+
+<section>
+  <h2>Agenda</h2>
+
+  <h4>1. Intros </h4>
+
+  <h4>2. Background</h4>
+<!--<p>Aaron</p>
+		<p>Prior Work & Events</p>
+    <p>Drupal 7</p>-->
+
+  <h4>3. D8 Media Initiative Update</h4>
+<!--<p>Status of Media in D8</p>
+		<p>Roadmap</p>
+    <p>Documentation</p>-->
+
+  <h4>4. D8 Media Ecosystem Updte</h4>
+<!--<p>Contributing</p>
+    <p>Events</p>-->
+
+
+  <h4>5. Getting Involved</h4>
+<!--<p>Contributing</p>
+    <p>Events</p>-->
+
+  <h4>6. Questions</h4>
+  
+  <h5>Technical Appendices</h5>
+</section>
+
+
+
+<!-- Intros -->
+<section>
+
+	<section>
+		<h1>1. Intros</h1>
+	</section>
+
+	<section>
+		<h3>Who's in the Audience?</h3>
+		<h3>Quick Summary</h3>
+		<p>D8 Media ecosystem is the best Media's ever been in Drupal</p>
+		<p>That said, <strong>lots, & <u>lots</u></strong> of work to be done</p>
+	</section>
+
+</section>
+
+
+
+<!-- Background -->
+
+<section>
+
+	<section>
+		<h1>2. Background</h1>
+	</section>
+
+	<section>
+		<h2>Media is Challenging</h2>
+		<h3>Complex interdependent functionality</h3>
+		<p>Traditional media types (photos, video, audio, etc.)</p>
+		<p>+ New media types (tweets instagram posts)</p>
+		<p>+ Local & external files</p>
+		<p>+ Media meta data</p>
+		<p>+ Caption variations</p>
+		<p>+ Caption variations</p>
+		<p>+ Revisioning</p>
+		<p><u>+ Translations</u></p>
+		<h4>= Media is Tough Stuff!</h4>
+	</section>
+
+	<section>
+		<h2>Thank You Aaron Winborn!!</h2>
+		<h4>Literally <a href="http://www.packtpub.com/create-multimedia-website-with-drupal/book/mid/230609ykjxg1">wrote the book</a> (and <a href="https://www.drupal.org/u/aaron" target="_blank">the code</a>) on media in Drupal</h4>
+		<h4>Diagnosed with ALS in 2012 </h4>
+		<h5>June 10, 1967 - March 24, 2015</h5>
+		<img src="img/2011-media-sprinters.jpg" style="height: 320px;" />
+		<img src="img/aaron-family.jpg" style="height: 320px;" />
+		<h5><a href="https://www.drupal.org/node/2444367" target="_blank">Community Spotlight: drupal.org/node/2444367</a></h5>
+		<h5><a href="https://www.drupal.org/aaron-winborn-award" target="_blank">drupal.org/aaron-winborn-award</a></h5>
+	</section>
+
+	<section>
+		<h2>Drupal 7</h2>
+		<h5>Functionality</h5>
+		<p>Core provides fieldable files & images (big improvement over D6)</p>
+		<h5>Limitations</h5>
+		<p>Core File interactions limited to fields</p>
+		<p>Core Unused files deleted after 6 hours</p>
+		<p>Core cannot reuse files or add fields to files</p>
+		<p>Contrib provide lots of rich functionality ecosystem slow to get completed & documented</p>
+<!--<p><img src="img/d7-image-field.png" /><br/><img src="img/d7-image-field2.png" /></p>-->
+	</section>
+
+
+</section>
+
+
+
+<!-- Media Initiative Update -->
+<section>
+
+	<section>
+		<h1>3. D8 Media Initiative Update</h1>
+	</section>
+
+	<section>
+		<h2>Our Mission</h2>
+    <h4>Create the world's best media solution available in any CMS/Framework</h4>
+	</section>
+
+	<section>
+		<h2>Media Initiative Plan</h2>
+		<h4>2-3+ year strategy created in 2013 & 2014 at </h4>
+		<h4>DrupalCon Prague BoF & NYC Camp 2014</h4>
+		<img src="img/nyc.jpg" width="50%" />
+		<img src="img/nyc-2014-2.jpg" width="50%" />
+	</section>
+
+	<section>
+		<h2>D8 Media Initiative Goals</h2>
+		<h4>Collaborative architecture</h4>
+		<h4>Collaborative resources</h4>
+		<h4>Independent, reusable, and pluggable modules</h4>
+		<h4>Team & Community Communication</h4>
+		<h4>Momentum & Team Growth</h4>
+		<h4>Funding for stand-alone sprint weeks</h4>
+	</section>
+	
+	<section>
+		<h2>Media Functionality Priorities</h2>
+		<h4>Media Embedding / WYSWIYG</h4>
+		<h4>Media Browsing and selection</h4>
+		<h4>Media Storage</h3>
+	</section>
+	
+	<section>
+		<h2>We need <u>YOUR</u> help!</h2>
+		<h4>About to be flooded with D8 issues/requests</h4>
+		<h4>Help needed with responding D8 community issues/requests</h4>
+  	<h4>Current dev team needs to stay focused on D8 development</h4>
+		<h4>Will eventually need assistance for D7 backports</h4>
+		<p>(more on Getting Involved later)</p>
+	</section>
+
+</section>
+
+
+
+
+<!-- Media Initiative Update -->
+<section>
+
+	<section>
+		<h1>4. D8 Media Ecosystem Update</h1>
+	</section>
+
+	<section>
+		<h2>Where are We?</h2>
+		<h4>We're almost 2 yrs into our 3 year plan</h4>
+		<h4>Making steady progress, but would be ideal to accelerate</h4>
+		<h4>In need of more support</h4>
+	</section>
+
+	<section>
+		<h2>A Lot of Work to Get us Here</h2>
+		<h3>Summits</h3>
+		<p>NYC Camp 2012, 2013, 2014 (x2), 2015 & (upcoming July) 2016</p>
+		<p>BADCamp 2014</p>
+		<p>DrupalCon New Orleans 2016</p>
+		<h3>Sprints</h3>
+		<p>NYC Camp 2013, 2014, 2015 & (upcoming July) 2016</p>
+		<p>MWDDS 2014, 2015</p>
+		<p>BADCamp 2014, 2015</p>
+		<p>DrupalCon 2014, 2015s</p>
+		<h4>Lots of work left too</h4>
+	</section>
+
+	<section>
+		<h2>What is in Drupal 8 Core?</h2>
+		<h3>Several Improvements over D7</h3>
+		<p>CKEditor + Basic image upload</p>
+		<p>Basic file listing page</p>
+		<p>Basic file usage page</p>
+		<h4>Configurable file cleanup</h4>
+	</section>
+
+	<section>
+		<h2>Drupal 8 Core limitations</h2>
+		<p>File interactions still limited to fields</p>
+		<p><del>Unused files deleted after 6 hours</del></p>
+		<p>Only basic WYSIWYG embedding support for images</p>
+		<p>Cannot reuse files</p>
+		<p>Cannot add fields to files</p>
+	</section>
+
+	<section>
+		<h2>What is in Drupal 8 Contrib?</h2>
+		<h3>Short Answer: Lots!</h3>
+		<h3>Long Answer: It's Complicated (for now)</h3>
+		<h6>(with your help we can make it easy)</h6>
+	</section>
+
+	<section>
+		<h2>Implementing Media in D8</h2>
+		<h3>3 Approaches:</h3>
+		<h4>Distros (Thunder) & Starter configurations (Media & Pink Eye, etc)</h4>
+		<h4>Modular selection of needed modules</h4>
+		<h4>Extended via APIs (Crop API, Embed APO, etc</h4>
+	</section>
+
+	<section>
+		<h1>Achieving our Goals?</h1>
+		<p style="margin: 10px 0;"><img src="img/ok.png" style="margin: 0; border: 0; background: transparent;" /> Collaborative architecture</p>
+		<p style="margin: 10px 0;"><img src="img/ok.png" style="margin: 0; border: 0; background: transparent;" /> Collaborative resources</p>
+		<p style="margin: 10px 0;"><img src="img/ok.png" style="margin: 0; border: 0; background: transparent;" /> Independent, reusable, and pluggable modules</p>
+		<p style="margin: 10px 0;"><img src="img/not.png" style="margin: 0; border: 0; background: transparent;" /> Team & Community Communication (improving)</p>
+		<p style="margin: 10px 0;"><img src="img/not.png" style="margin: 0; border: 0; background: transparent;" /> Momentum & Team Growth (so-so)</p>
+		<p style="margin: 10px 0;"><img src="img/not.png" style="margin: 0; border: 0; background: transparent;" /> Funding for stand-alone sprint weeks (stand still)</p>
+	</section>
+
+</section>
+
+
+
+
+<section>	
+	<section>
+		<h1>5. Get Involved!</h1>
+	</section>
+
+	<section>
+		<h2>More Help is Needed</h2>
+		<p>Likely that 3000+ hours of development remain</p>
+		<p> </p>
+		<p>Cannot add fields to files</p>
+	</section>
+
+	<section>
+		<h2>Upcoming  Summits & Sprints</h2>
+		<p><a href="http://www.drupalmedia.org/events">drupalmedia.org/events</a></h4>
+		<p>Dev Days 2016 Sprint (Jun 21-26?)</>
+		<p>Dedicated week long sprints?</p>
+		<p>NYC Camp 2016 Media Summit (Mon Jul 8)</p>
+		<p>NYC Camp 2016  (Jul 8 -17)</p>
+		<p>Midwest Drupal Dev Summit (Aug 2016?)</p>
+		<p>DrupalCon Dublin Sprint/Summit (Sep 2016)</p>
+		<p>BAD Camp Sprint/Summit ()</p>
+		<p>Your Local Camp?</p>
+	</section>
+
+	<section>
+		<h2>Join the Team!</h2>
+		<h4>Contribute</h4>
+		<p><img src="img/contributors/you.gif" alt="Your Face Here" title="Your Face Here" style="height: 100px" /></p>
+		
+		<img src="img/contributors/94409.png" alt="Aaron Winborn (aaron)" title="Aaron Winborn (aaron)" style="height: 100px" />
+		<img src="img/contributors/picture-49817.png" alt="Jonathan (jonhattan)" title="Jonathan (jonhattan)" style="height: 100px" />
+		<img src="img/contributors/picture-53892.jpg" alt="Dave Reid" title="Dave Reid" style="height: 100px" />
+		<img src="img/contributors/picture-77320.jpg" alt="Marc Ingram (marcingy)" title="Marc Ingram (marcingy)" style="height: 100px" />
+		<img src="img/contributors/picture-139855.png" alt="Katherine Senzee (ksenzee)" title="Katherine Senzee (ksenzee)" style="height: 100px" />
+		<img src="img/contributors/picture-210762.jpg" alt="Hai-Nam Nguyen (jcisio)" title="Hai-Nam Nguyen (jcisio)" style="height: 100px" />
+		<img src="img/contributors/picture-214652.jpg" alt="Sascha Grossenbacher (Berdir)" title="Sascha Grossenbacher (Berdir)" style="height: 100px" />
+		<img src="img/contributors/picture-252788.jpg" alt="Brant Wynn (brantwynn)" title="Brant Wynn (brantwynn)" style="height: 100px" />
+		<img src="img/contributors/picture-254778.jpg" alt="Florian Weber (webflo)" title="Florian Weber (webflo)" style="height: 100px" />
+		<img src="img/contributors/picture-282629.jpg" alt="Primoz Hmeljak (Primsi)" title="Primoz Hmeljak (Primsi)" style="height: 100px" />
+		<img src="img/contributors/picture-290182.png" alt="Devin Carlson" title="Devin Carlson" style="height: 100px" />
+		<img src="img/contributors/picture-586386.jpg" alt="Brandon Neil (bneil)" title="Brandon Neil (bneil)" style="height: 100px" />
+		<img src="img/contributors/picture-744628.jpg" alt="Janez Urevc (slashrsm)" title="Janez Urevc (slashrsm)" style="height: 100px" />
+		<img src="img/contributors/picture-840556.png" alt="Kevin Moll (kmoll)" title="Kevin Moll (kmoll)" style="height: 100px" />
+		<img src="img/contributors/picture-1011436.jpg" alt="Paris Liakos (ParisLiakos)" title="Paris Liakos (ParisLiakos)" style="height: 100px" />
+		<img src="img/contributors/picture-2582268.jpg" alt="Samuel Mortenson (samuel.mortenson)" title="Samuel Mortenson (samuel.mortenson)" style="height: 100px" />
+		<img src="img/contributors/picture-2828287.jpg" alt="Chandan Singh (cs_shadow)" title="Chandan Singh (cs_shadow)" style="height: 100px" />
+		<img src="img/contributors/picture-3174839.jpg" alt="Prateek Mehta (prateekMehta)" title="Prateek Mehta (prateekMehta)" style="height: 100px" />
+		<img src="img/contributors/354804.png" alt="Fabian Franz (Fabianx)" title="Fabian Franz (Fabianx)" style="height: 100px" />
+		<img src="img/contributors/picture-858604.jpg" alt="Alexandre Mallet (woprrr)" title="Alexandre Mallet (woprrr)" style="height: 100px" />
+	</section>
+
+	<section>
+		<h2>Become a Media Initiative Partner</h2>
+		<ul>
+			<li>Media team is seeking partners to help fund sprints</li>
+			<li>100% of funds allocated to sprints (travel, accommodation, food)</li>
+			<li>Each sprints cost ~$6000</li>
+			<li>Aiming to raise $25,000 through small donations</li>
+    <ul>
+      <li>Gold ($1,500+)</li>
+      <li>Silver ($100)</li>
+      <li>Bronze ($500)</li>
+      <li>Community ($250)</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Resources</h2>
+		<ul>
+			<li><strong><a href="http://www.drupalmedia.org/">drupalmedia.org</a></strong></li>
+			<li>Weekly scrum meetings on #drupal-media IRC</li>
+			<li><a href="https://github.com/drupal-media">github.com/drupal-media</a></li>
+			<li><a href="http://groups.drupal.org/media">groups.drupal.org/media</a></li>
+			<li>@davereid - <a href="https://www.drupal.org/u/dave-reid">drupal.org/u/dave-reid</a></li>
+			<li>@slashrsm - <a href="https://www.drupal.org/u/slashrsm">drupal.org/u/slashrsm</a></li>
+			<li>@willykaram - <a href="https://www.drupal.org/u/willyk">drupal.org/u/willyk</a></li>
+
+		</ul>
+	</section>
+
+
+</section>
+
+
+<!-- Questions -->
+
+<section>
+  <img src="img/drupal-media.png" style="border: none; height: 250px" />
+  <h2>6. Questions?</h2>
+  <h3>Thank you!</h3>
+
+  <!--<p>  
+    <a href="https://www.drupal.org/u/YOUR-NAME">YOUR NAME</a> / <a href="http://twitter.com/YOUR_NAME">@YOUR_NAME</a>
+  </p>-->
+  <p>
+    <a href="http://drupal-media.github.io/d8-status-update">drupal-media.github.io/d8-status-update</a>
+  </p>
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- Technical Appendicies - D8 -->
+
+<section>
+
+	<section>
+		<h2>D8 Media Ecosystem</h2>
+		<h3>See Drupal Media Guide Gitbook</h3>
+	</section>
+
+	<section>
+		<h2>What is in Drupal 8 Core?</h2>
+		<h4>CKEditor + Basic image upload</h4>
+		<h4>Basic file listing page</h4>
+		<h4>Configurable file cleanup</h4>
+	</section>
+
+	<section>
+		<h2>What is in Drupal 8 Core?</h2>
+		<h3>CKEditor + Basic image upload</h3>
+		<video controls width="75%">
+			<source src="screencasts/core_embed.webm" type="video/webm">
+			Your web browser doesn't support playing this WebM screencast.
+		</video>
+	</section>
+
+	<section>
+		<h2>What is in Drupal 8 Core?</h2>
+		<h3>Basic file listing page</h3>
+		<img src="img/d8-file-listing.png" class="stretch" />
+	</section>
+
+	<section>
+		<h2>What is in Drupal 8 Core?</h2>
+		<h3>Basic file usage page</h3>
+		<img src="img/d8-file-usage.png" class="stretch" />
+	</section>
+
+	<section>
+		<h2>What is in Drupal 8 Core?</h2>
+		<h3>Configurable file cleanup</h3>
+		<img src="img/d8-file-cleanup-options.png" class="stretch" />
+	</section>
+
+	<section>
+		<h2>Drupal 8 Core limitations</h2>
+		<p>File interactions still limited to fields</p>
+		<p><del>Unused files deleted after 6 hours</del></p>
+		<p>Only basic WYSIWYG embedding support for images</p>
+		<p>Cannot reuse files</p>
+		<p>Cannot add fields to files</p>
+	</section>
+
+	<section>
+		<h2>What is in Drupal 8 Contrib?</h2>
+		<h4>CKEditor + Basic image upload</h4>
+		<h4>Basic file listing page</h4>
+		<h4>Configurable file cleanup</h4>
+	</section>
+
+		<section>
+			<h2>Entity Embed</h2>
+			<p>Status: Usable</p>
+			<p><a href="https://www.drupal.org/project/entity_embed">drupal.org/project/entity_embed</a></p>
+			<p>Completed:<ul><li>Backported to Drupal 7</li><li>Improved UX of display configuration</li></ul></p>
+			<p>Remaining:
+				<ul>
+					<li>Integrate selection with Entity Browser</li>
+					<li>Usability polish</li>
+					<li>Abstract to extend Embed API</li>
+				</ul>
+			</p>
+		</section>
+
+		<section>
+			<video controls>
+				<source src="screencasts/entity_embed.webm" type="video/webm">
+				Your web browser doesn't support playing this WebM screencast.
+			</video>
+	</section>
+
+	<section>
+		<h2>Embed API</h2>
+		<h4>Status: In Progress</h4>
+		<p><a href="https://www.drupal.org/project/embed">drupal.org/project/embed</a></p>
+		<p>Abstraction of reusable embedding concepts from Entity Embed.</p>
+	</section>
+
+	<section>
+		<h2>URL Embed</h2>
+		<h4>Status: In Progress / GSOC 2015</h4>
+		<p><a href="https://www.drupal.org/project/url_embed">drupal.org/project/url_embed</a></p>
+		<p>Allows embedding of URLs using the WYSIWYG or link fields.</p>
+		<pre><code><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" data-embed-display="html"></a></code></pre>
+		<p>Using the Embed library from <a href="https://github.com/oscarotero/Embed">github.com/oscarotero/Embed</a><br/>supports much more than just oEmbed</p>
+		<p>Transform pasted embeddable URLs and embed codes in WYSIWYG to normalized HTML tag.</p>
+	</section>
+
+	<section>
+		<h2>Shortcode Embed</h2>
+		<h4>Status: In Planning</h4>
+		<p>Custom "macros" to convert <a href="http://codex.wordpress.org/Shortcode_API">shortcodes</a> to rendered HTML.</p>
+		<pre><code><drupal-shortcode data-shortcode="callout">My callout text</drupal-shortcode></code></pre>
+	</section>
+
+	<section>
+		<section>
+			<h2>Entity Browser</h2>
+			<h4>Status: In Progress / Usable-ish</h4>
+			<p><a href="https://www.drupal.org/project/entity_browser">drupal.org/project/entity_browser</a></p>
+			<p>Completed:<ul><li>Architecture and API</li><li>Integration with Inline Entity Form</li><li>Views integration for selection (almost)</li></ul></p>
+			<p>Remaining:<ul><li>UI for browser config entities</li><li>Pager support in Views integration</li><li>Constraints integration</li><li>Multi-step selection</li><li>Current selection</li><li>...</li></ul>
+		</section>
+
+		<section>
+			<video controls>
+				<source src="screencasts/entity_browser_with_dropzone.webm" type="video/webm">
+				Your web browser doesn't support playing this WebM screencast.
+			</video>
+		</section>
+	</section>
+
+	<section>
+		<section>
+			<h2>Inline entity form (IEF)</h2>
+		</section>
+
+		<section>
+			<h3>What?! But... </h3>
+			<img src="img/ryan.jpg">
+		</section>
+
+		<section>
+			<h3>... isn't that Drupal Commerce stuff?! </h3>
+			<img src="img/charming_guys.jpg">
+		</section>
+
+		<section>
+			<h1>Collaboration!</h1>
+			<h1>Reusable components!</h1>
+		</section>
+
+		<section>
+			<h2>Inline entity form (IEF)</h2>
+			<h4>Status: Usable</h4>
+			<p><a href="https://www.drupal.org/project/inline_entity_form">drupal.org/project/inline_entity_form</a></p>
+			<p>Completed:<ul><li>IEF form element</li><li>Field widget (simple & complex)</li><li>Entity browser integration</li></ul></p>
+			<p>Remaining:<ul><li>Code cleanup</li><li>Tests</li></ul>
+		</section>
+
+		<section>
+			<video controls>
+				<source src="screencasts/inline_entiy_form.webm" type="video/webm">
+				Your web browser doesn't support playing this WebM screencast.
+			</video>
+		</section>
+	</section>
+
+	<section>
+		<h2>File Entity</h2>
+		<h4>Status: In Planning / Usable-ish</h4>
+		<p><a href="https://www.drupal.org/project/file_entity">drupal.org/project/file_entity</a></p>
+		<p>Extends core's file entity type with fieldability and add/edit/delete forms.</p>
+		<p>Need to regroup on module scope.</p>
+		<p>Unofficial port: <a href="https://github.com/md-systems/file_entity">github.com/md-systems/file_entity</a></p>
+	</section>
+
+	<section>
+	
+		<section>
+			<h2>Media Entity</h2>
+			<h4>Status: Usable</h4>
+			<p><a href="https://www.drupal.org/project/media_entity">drupal.org/project/media_entity</a></p>
+			<p>Completed:</p>
+				<ul>
+					<li>Basic editorial UI</li>
+					<li>Metadata handling API</li>
+					<li>Lots of provider integrations already written: YouTube, Grab networks, AOL, Twitter, Instagram, local files</li>
+					<li>Media library</li>
+				</ul>
+			<p>Remaining:</p>
+				<ul>
+					<li>Integrate media library with Entity browser</li>
+					<li>More powerful configuration UI</li>
+					<li>More providers, leverage url_embed</li>
+					<li>Rendering</li>
+				</ul>
+		</section>
+
+		<section>
+			<video controls>
+				<source src="screencasts/media_entity.webm" type="video/webm">
+				Your web browser doesn't support playing this WebM screencast.
+			</video>
+		</section>
+
+	</section>
+
+	<section>
+		<h2>Crop API</h2>
+		<h4>Status: In Progress</h4>
+		<p><a href="https://www.drupal.org/project/crop">https://www.drupal.org/project/crop</a></p>
+		<p>Provides basic API for image cropping. This module won't do much by itself. Users should pick one of UI modules that utilize this API.</p>
+		<p>Completed:<ul><li>Basic API and cropping entity definitions</li><li>Integrations with file and media entities</li></ul></p>
+		<p>Remaining:<ul><li>UI (left for integrating modules?)</li></ul></p>
+	</section>
+
+	<section>
+		<section>
+			<h2>Dropzone JS integration</h2>
+			<h4>Status: Usable/In progress</h4>
+			<p><a href="https://www.drupal.org/project/dropzonejs">https://www.drupal.org/project/dropzonejs</a></p>
+			<p>Nice multi uploader tool.</p>
+			<p>Completed:</p><ul><li>Form element</li><li>Entity browser integration</li></ul>
+			<p>Remaining:</p><ul><li>Image/File field integration</li><li>Code cleanup</li><li>Tests</li></ul>
+		</section>
+
+		<section>
+			<h2>Dropzone JS integration</h2>
+			<video controls>
+				<source src="screencasts/dropzonejs.webm" type="video/webm">
+				Your web browser doesn't support playing this WebM screencast.
+			</video>
+		</section>
+
+	</section>
+
+	<section>
+		<section>
+			<h2>Fallback Formatter</h2>
+			<h4>Status: Usables</h4>
+			<p><a href="https://www.drupal.org/project/fallback_formatter">drupal.org/project/fallback_formatter</a></p>
+			<p>Provides a field formatter that can attempt multiple formatters and the first one that returns output for each value wins.</p>
+		</section>
+
+		<section>
+			<img src="img/fallback-formatter.png" class="stretch" />
+		</section>
+	</section>
+
+	<section>
+		<h2>Recycled Formatters</h2>
+		<h4>Status: In Planning</h4>
+		<p><a href="https://github.com/drupal-media/recycled_formatters">github.com/drupal-media/recycled_formatters</a><br>
+		<a href="https://www.drupal.org/project/file_image_formatters">drupal.org/project/file_image_formatters</a></p>
+		<p>Allow formatters to be shared between image, file, and entity_reference fields.</p>
+	</section>
+
+	<section>
+		<h2>File Download</h2>
+		<h4>Status: In Planning</h4>
+		<p>URL for direct downloads of file entities, logging downloads, etc.</p>
+	</section>
+
+	<section>
+		<h2>Media</h2>
+		<h4>Release Canditate</h4>
+		<p><a href="https://www.drupal.org/project/media">drupal.org/project/media</a></p>
+		<p>Becomes a "glue" module that brings all the components together.
+		<p>Based on File Entity + Entity Browser config + Entity Embed button</p>
+	</section>
+
+	<section>
+		<h2>Media Pinkeye*</h2>
+		<h4>Status: Usable - <em>Estimate: 2-3 developer/weeks</em></h4>
+		<p><a href="https://www.drupal.org/project/media_pinkeye">drupal.org/project/media_pinkeye</a></p>
+		<p>First module bringing everything together to work out of the box</p>
+		<p>Based on Media Entity + Entity Browser config</p>
+		<p>We want to create provide more glue modules like this</p>
+		<small>* not a disease</small>
+	</section>
+
+</section>
+
+
+
+
+<!-- Technical Appendicies - D7 -->
+
+<section>
+
+	<section>
+		<h2>D7 Media Ecosystem</h2>
+		<h3>See Drupal.org Guide</h3>
+	</section>
+
+	<section>
+		<h2>File Entity</h2>
+		<p><a href="https://www.drupal.org/project/file_entity">drupal.org/project/file_entity</a></p>
+		<p>File listing page</p>
+		<img src="img/d7-file-entity-files.png" class="stretch" />
+	</section>
+
+	<section>
+		<h2>File Entity</h2>
+		<p>Adding files (and archives of files)</p>
+		<img src="img/d7-file-entity-add.png" class="stretch" />
+	</section>
+
+	<section>
+		<h2>File Entity</h2>
+		<p>Managing files independently</p>
+		<img src="img/d7-file-entity-edit.png" class="stretch" />
+	</section>
+
+	<section>
+		<h2>File Entity</h2>
+		<p>File types</p>
+		<img src="img/d7-file-entity-types.png" class="stretch" />
+	</section>
+
+	<section>
+		<h2>File Entity</h2>
+		<p>Managing fields on files</p>
+		<img src="img/d7-file-entity-fields.png" class="stretch" />
+	</section>
+
+	<section>
+		<h2>File Entity</h2>
+		<p>Managing file display</p>
+		<img src="img/d7-file-entity-display.png" class="stretch" />
+	</section>
+
+	<section>
+		<h2>File Entity</h2>
+		<p>Simple HTML5 field formatters for audio and video files</p>
+		<p>Download link formatter</p>
+		<p>
+	</section>
+
+	<section>
+		<h2>File Lock</h2>
+		<p><a href="https://www.drupal.org/project/file_lock">drupal.org/project/file_lock</a></p>
+		<p>This module allows you to "lock" files so they cannot be deleted.</p>
+	</section>
+
+	<section>
+		<h2>Media</h2>
+		<p><a href="https://www.drupal.org/project/media">drupal.org/project/media</a></p>
+		<p>Media Browser widget for file and image fields</p>
+		<img src="img/d7-media-widget.png" />
+	</section>
+
+	<section>
+		<h2>Media</h2>
+		<p>Media Browser Upload</p>
+		<img src="img/d7-media-browser-upload.png" class="stretch" />
+	</section>
+
+	<section>
+		<h2>Media</h2>
+		<p>Media Browser Views integration</p>
+		<img src="img/d7-media-browser-library.png" class="stretch" />
+	</section>
+
+	<section>
+		<h2>Media</h2>
+		<p>Media Browser Web</p>
+		<img src="img/d7-media-browser-web.png" class="stretch" />
+	</section>
+	
+	<section>
+		<h2>Media oEmbed</h2>
+		<p><a href="https://www.drupal.org/project/media_oembed">drupal.org/project/media_oembed</a></p>
+		<p>For remote resources (YouTube, Vimeo, etc)</p>
+	</section>
+
+	<section>
+		<h2>Media CKEditor</h2>
+		<p><a href="https://www.drupal.org/project/media_ckeditor">drupal.org/project/media_ckeditor</a></p>
+		<h2>Entity Embed</h2>
+		<p><a href="https://www.drupal.org/project/entity_embed">drupal.org/project/entity_embed</a></p>
+	</section>
+
+	<section>
+		<h2>Scald</h2>
+		<p><a href="https://www.drupal.org/project/scald">drupal.org/project/scald</a></p>
+		<img src="img/d7-scald.png" />
+	</section>
+
+</section>
+
+
+
+
+
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true }
+        ]
+      });
+
+    </script>
+  </body>
+</html>
